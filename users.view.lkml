@@ -61,12 +61,12 @@ view: users {
     type: string
     sql: ${TABLE}.state ;;
     link: {
-      label: "absolute url"
+      label: "Filter by {{state | encode_uri}}"
       url: "filter::q={{state | encode_uri}}"
       icon_url: "https://google.com/favicon.ico"
     }
     link: {
-      label: "relative url"
+      label: "#filter by {{state | encode_uri}}"
       url: "#filter::state={{state | encode_uri}}"
       icon_url: "/favicon.ico"
     }
